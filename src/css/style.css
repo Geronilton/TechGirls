@@ -128,7 +128,7 @@ header {
 }
 
 
-.robotica-section {
+.robotica-section , .equipe-section{
     padding: 40px 20px;
     background-color: #fff;
     display: flex;
