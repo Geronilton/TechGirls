@@ -90,15 +90,6 @@ header {
 }
 
 
-.hero-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .hero-content {
     display: flex;
@@ -128,7 +119,7 @@ header {
 }
 
 
-.robotica-section , .equipe-section{
+.robotica-section, .hero-section{
     padding: 40px 20px;
     background-color: #fff;
     display: flex;
@@ -189,4 +180,29 @@ header {
 .responsaveis-section p {
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+.publicacoes-section{
+    background-color: #fff;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.content-publicacoes{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container-publicacoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
 }
