@@ -5,51 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechGirls</title>
     <link rel="stylesheet" href="src/css/style.css">
-    
 </head>
 <body>
-
-
     <header>
         <div class="cabecalho">
-            <div class="logo">
+            <div class="logo" tabindex="0" role="heading" aria-level="1">
                 TechGirls
+
+
+            <div class="logo">
+                <img class="imgLogo" src="./src//images/Girls__1_-removebg-preview.png" alt="nesta imagem tema uma garota com computador na direita de frente para outra garota tambem com um computador,
+            isso tudo tentro de circulo com cinco penas na parte inferior do circulo.">
+                <h3>TechGirls</h3>
             </div>
+            <button class="menu-hamburguer" aria-label="Menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </button>
             <div class="menu">
                 <nav>
                    <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Equipe</a></li>
-                    <li><a href="#">Laboratórios</a></li>
-                    <li><a href="#">PotiMaker</a></li>
-                    <li><a href="#">Publicações</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Contato</a></li>
-
+                    <li><a href="#" tabindex="0">Inicio</a></li>
+                    <li><a href="#" tabindex="0">Equipe</a></li>
+                    <li><a href="#" tabindex="0">Laboratórios</a></li>
+                    <li><a href="#" tabindex="0">PotiMaker</a></li>
+                    <li><a href="#" tabindex="0">Publicações</a></li>
+                    <li><a href="#" tabindex="0">Eventos</a></li>
+                    <li><a href="#" tabindex="0">Contato</a></li>
                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="src/images/imagem-destaque.PNG" alt="Imagem de destaque">
+    <main>
+        <section class="hero-section fade-in" tabindex="0" aria-labelledby="hero-heading">
+            <h2 id="hero-heading">Desenvolva Habilidades.<br>Conquiste o Mundo Digital</h2>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="src/images/imagem-destaque.PNG" alt="Imagem de destaque" role="img">
+                </div>
             </div>
-            <div class="hero-text">
-                <h2>Desenvolva Habilidades. <br> Conquiste o Mundo Digital</h2>
+        </section>
+
+        <section class="robotica-section fade-in" tabindex="0" aria-labelledby="robotica-heading">
+            <h3 id="robotica-heading" class="title">Iniciação à Robótica</h3>
+            <div class="robotica-content">
+                <div class="robotica-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor. Curabitur luctus justo vel nulla pharetra malesuada. In fermentum nulla nec felis tristique, nec pulvinar purus fermentum.</p>
+                </div>
+                <div class="robotica-image">
+                    <img src="src/images/imagem-destaque.PNG" alt="Imagem sobre robótica" role="img">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="responsaveis-section fade-in" tabindex="0" aria-labelledby="responsaveis-heading">
+            <h3 id="responsaveis-heading" class="title">Responsáveis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor. Curabitur luctus justo vel nulla pharetra malesuada. In fermentum nulla nec felis tristique, nec pulvinar purus fermentum.</p>
+        </section>
 
+        <section class="laboratorios-section fade-in" tabindex="0" aria-labelledby="laboratorios-heading">
+            <h3 id="laboratorios-heading" class="title">Laboratórios</h3>
+            <div class="laboratorios-cards">
+                <div class="card" tabindex="0">
+                    <h4>Laboratório de Programação</h4>
+                    <p>Aprenda a programar robôs utilizando diferentes linguagens de programação.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h4>Laboratório de Eletrônica</h4>
+                    <p>Explore os fundamentos da eletrônica e como aplicá-los em projetos de robótica.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <h4>Laboratório de Mecânica</h4>
+                    <p>Desenvolva habilidades em design e construção de estruturas mecânicas para robôs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="potimaker-section fade-in" tabindex="0" aria-labelledby="potimaker-heading">
+            <h3 id="potimaker-heading" class="title">PotiMaker</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor.</p>
+        </section>
+
+        <section class="publicacoes-section fade-in" tabindex="0" aria-labelledby="publicacoes-heading">
+            <h3 id="publicacoes-heading" class="title">Publicações</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor.</p>
+        </section>
+
+        <section class="eventos-section fade-in" tabindex="0" aria-labelledby="eventos-heading">
+            <h3 id="eventos-heading" class="title">Eventos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor.</p>
+        </section>
+
+        <section class="contato-section fade-in" tabindex="0" aria-labelledby="contato-heading">
+            <h3 id="contato-heading" class="title">Contato</h3>
+            <form action="#" method="post" class="contato-form">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TechGirls. Todos os direitos reservados.</p>
     <section class="robotica-section">
         <div class="robotica-content">
             <div class="robotica-text">
                 <h3 class="title">Iniciação à Robótica</h3>
 
-                <h1>rodape</h1>um dolor, sit amet consectetur adipisicing elit. Consequatur explicabo amet, animi odio, expedita neque necessitatibus aperiam porro quas soluta perspiciatis sapiente a optio temporibus quam consequuntur hic unde qui.</p>
+               <p> O projeto visa incentivar as meninas nas áreas de ciências
+                    exatas, engenharias e computação, trazendo o conhecimento 
+                    técnico e científico as meninas em fase de formação, no 
+                    ensino fundamental 2 e ensino médio. Os responsáveis pelo
+                     projeto são os professores Eberton Marinho, Helber Wagner e Tatiana Sorrentino, 
+                     professores do Curso de Tecnologia em Sistemas para Internet no campus Canguaretama do IFRN.</p>
             </div>
             <div class="robotica-image">
                 <img src="src/images/imagem-destaque.PNG" alt="Imagem sobre robótica">
@@ -57,14 +139,6 @@
         </div>
     </section>
 
-    <section class="eventos-section">
-        <h3 class="title">Eventos</h3>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. 
-            Donec sollicitudin enim ut erat pellentesque, at malesuada magna porttitor. Curabitur luctus justo vel nulla pharetra malesuada.
-            In fermentum nulla nec felis tristique, nec pulvinar purus fermentum.
-        </p>
-    </section>
 
     <section class="responsaveis-section">
         <h3 class="title">PotiMaker</h3>
@@ -76,7 +150,7 @@
          com equipamentos fabricados no PotiMaker; projeto de uma impressora 3D fabricada com sucatas dos laboratórios de manutenção;
           construção de dispositivo para automatizar o processo de ventilação manual para pacientes em situação de emergência 
           (protótipo denominado OxyGEN, aprovado pela AEMPS (Agência Espanhola de Medicamentos e Produtos de Saúde); 
-          desenvolvimento de EPI´s; projeto de controle de acesso com triagem de temperatura e túnel de desinfecção contra Covid-19
+          desenvolvimento de EPI´´s; projeto de controle de acesso com triagem de temperatura e túnel de desinfecção contra Covid-19
            (recentemente aprovado no Edital Conif n º 01/2020); projeto de instrumentos de medição de velocidade e aceleração para
          laboratório de Física; projeto para medição de temperatura em experimentos no laboratório de Química; projeto de sistema 
          didático de irrigação automática alimentado por energia solar; projeto de instrumentos musicais eletrônicos (theremin,
@@ -85,6 +159,15 @@
            desenvolvimento de kits didáticos para auxiliar no estudo da metrologia; fabricação de peças para jogos matemáticos,
             para uso na Licenciatura em Educação no Campo com ênfase Matemática; e fabricação de peças para exposições de arte
              cinética.
+        <p>O FabLab PotiMaker permite que pesquisadores e pesquisadoras
+             realizem a conversão de ideias em protótipos, auxiliando no 
+             desenvolvimento de ações inovadoras. Nele serão realizadas 
+             atividades com base na cultura Maker (fazer) e na metodologia
+            Learning by doing  (aprender fazendo). O laboratório também
+            dará suporte às atividades de ensino, pesquisa e extensão que
+            envolvam manufatura de objetos, circuitos eletrônicos, robótica
+            e programação. Os recursos têm o objetivo de tornar o aprendizado 
+            mais lúdico, além de contribuir para a produção científica e tecnológica.
         </p>
     </section>
 
@@ -102,13 +185,24 @@
         
         <div class="container-publicacoes">
             <div class="content-publicacoes">
-               
+                <img src="./src/images/quilombas.png" 
+                alt="logo contendo tambores com o titulo quilombo sibauma">
+               <h4>Campus Canguaretama recebe 
+                   homenagem na 13° Noite dos Tambores da comunidade 
+                   quilombola de Sibaúma</h4>
             </div>
             <div class="content-publicacoes">
-             
+                <img width="250px" height="250px"
+                src="./src/images/praça.png" 
+                alt="logo contendo tambores com o titulo quilombo sibauma">
+               <h4>Praça da Paz entre os povos na Rede Brasileira de Jardins Botânicos</h4>
             </div>
             <div class="content-publicacoes">
-              
+                <img src="./src/images/quilombas.png" 
+                alt="logo contendo tambores com o titulo quilombo sibauma">
+               <h4>Campus Canguaretama recebe 
+                   homenagem na 13° Noite dos Tambores da comunidade 
+                   quilombola de Sibaúma</h4>
             </div>
         </div>
     </section>
@@ -139,6 +233,7 @@
     </section>
     <footer class="rodape">
         <div class="linha-rodape"></div>
+        <p>&copy; 2023 TechGirls. Todos os direitos reservados.</p>
         <!--<div class="imagem-rodape"> 
             <img src="" alt="nesta imagem tema uma garota com computador na direita de frente para outra garota tambem com um computador,
             isso tudo tentro de circulo com cinco penas na parte inferior do circulo.">
@@ -148,5 +243,30 @@
             <i class="icone"></i>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // 10% da seção deve estar visível
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Para não observar novamente
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
