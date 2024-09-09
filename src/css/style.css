@@ -19,6 +19,7 @@ header {
 }
 
 .logo {
+    display: flex;
     font-size: 1.8em;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -179,17 +180,7 @@ header {
 .responsaveis-section p {
     font-size: 1.1em;
     line-height: 1.6;
-<<<<<<< HEAD
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-=======
-}
-
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
->>>>>>> 3bde948e9b4a8758a25b604c6c09abef2abc2cd7
 }
 
 .laboratorios-section h3, .potimaker-section h3, .publicacoes-section h3, .eventos-section h3, .contato-section h3 {
@@ -308,7 +299,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-<<<<<<< HEAD
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -322,7 +312,6 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-=======
 }
 .publicacoes-section{
     background-color: #fff;
@@ -348,7 +337,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
->>>>>>> 3bde948e9b4a8758a25b604c6c09abef2abc2cd7
 }
 
 /* Estilos responsivos */
@@ -358,7 +346,6 @@ footer {
         align-items: center; /* Centralizando conteúdo */
     }
 
-<<<<<<< HEAD
     .hero-image, .robotica-image {
         text-align: center; /* Centralizando imagem */
     }
@@ -370,7 +357,6 @@ footer {
     .hero-text h2 {
         font-size: 20px;
     }
-=======
 }
 .linha-rodape{
     background-color: white;
@@ -391,5 +377,4 @@ footer {
     width: 110px;
     height: 110px;
     margin-left: 1%;
->>>>>>> 3bde948e9b4a8758a25b604c6c09abef2abc2cd7
 }
