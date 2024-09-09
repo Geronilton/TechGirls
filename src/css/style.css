@@ -219,11 +219,22 @@ header {
     padding: 1px;
     border: 1px solid rgb(249, 122, 122);
 }
-.imagem-rodape{
-    width: 1px;
-    padding: 1px;
-    border-radius: 100%;
-    /*margin-top: -70px;
-    margin-bottom: -100px;
-    margin-left: -100px;*/
+.imagem-evento{
+    width: 150px;
+    padding: 150px;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    margin-left: -120px;
+}
+.eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+.eventos-title{
+    margin: 10px;
+    background-color: #e9dbfb;
 }
