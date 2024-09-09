@@ -25,6 +25,8 @@ header {
 }
 
 .logo {
+    display: flex;
+    font-size: 1.8em;
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
