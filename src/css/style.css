@@ -60,7 +60,7 @@ header {
 
 .menu nav ul li a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 20px;
     color: #fff;
     padding: 10px 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -205,6 +205,13 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .laboratorios-section h3, .potimaker-section h3, .publicacoes-section h3, .eventos-section h3, .contato-section h3 {
     font-size: 2.4em;
     color: #7C39D3;
@@ -291,4 +298,130 @@ header {
 .contato-form label {
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.contato-form input, .contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contato-form button {
+    background-color: #7C39D3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: #5a2cb8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeitos de animação */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.publicacoes-section{
+    background-color: #fff;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.content-publicacoes{
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 5px;
+}
+
+.container-publicacoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hero-content, .robotica-content {
+        flex-direction: column; /* Mudando para coluna para responsividade */
+        align-items: center; /* Centralizando conteúdo */
+    }
+
+    .hero-image, .robotica-image {
+        text-align: center; /* Centralizando imagem */
+    }
+
+    .hero-text {
+        padding-left: 0; /* Removendo padding para centralizar texto */
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+}
+.linha-rodape{
+    background-color: white;
+    width: auto;
+    padding: 1px;
+    border: 1px solid rgb(249, 122, 122);
+}
+.imagem-evento{
+    width: 150px;
+    padding: 150px;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    margin-left: -120px;
+}
+.eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+.eventos-title{
+    margin: 10px;
+    background-color: #e9dbfb;
+}
+.imagem-rodape{
+    width: 1px;
+    padding: 1px;
+    border-radius: 100%;
+    /*margin-top: -70px;
+    margin-bottom: -100px;
+    margin-left: -100px;*/
+}
+
+.imgLogo{
+    width: 110px;
+    height: 110px;
+    margin-left: 1%;
 }
