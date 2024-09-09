@@ -90,15 +90,6 @@ header {
 }
 
 
-.hero-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .hero-content {
     display: flex;
@@ -128,7 +119,7 @@ header {
 }
 
 
-.robotica-section {
+.robotica-section, .hero-section{
     padding: 40px 20px;
     background-color: #fff;
     display: flex;
@@ -190,6 +181,7 @@ header {
     font-size: 1.1em;
     line-height: 1.6;
 }
+<<<<<<< HEAD
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -265,4 +257,51 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+=======
+
+.publicacoes-section{
+    background-color: #fff;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.content-publicacoes{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container-publicacoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+}
+.rodape{
+    background-color: #7C39D3;
+    padding: 20px;
+    margin-bottom: auto;
+
+
+}
+.linha-rodape{
+    background-color: white;
+    width: auto;
+    padding: 1px;
+    border: 1px solid rgb(249, 122, 122);
+}
+.imagem-rodape{
+    width: 1px;
+    padding: 1px;
+    border-radius: 100%;
+    /*margin-top: -70px;
+    margin-bottom: -100px;
+    margin-left: -100px;*/
+>>>>>>> f8264fb87eaa57f43ca46bf569f3893e2e4f6765
 }
