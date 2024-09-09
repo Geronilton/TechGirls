@@ -61,7 +61,7 @@ header {
 
 .menu nav ul li a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 20px;
     color: #fff;
     padding: 10px 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -78,6 +78,7 @@ header {
 .hero-section {
     padding: 60px 20px;
     background-color: #f9f9f9; /* Fundo cinza claro */
+    text-align: center; /* Centralizando o texto */
 }
 
 .robotica-section {
@@ -105,6 +106,11 @@ header {
     flex: 1; /* Permitir que os cards ocupem espaço igual */
     min-width: 250px; /* Largura mínima para os cards */
     max-width: 30%; /* Largura máxima para os cards */
+    transition: transform 0.3s; /* Efeito de hover suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
 }
 
 .potimaker-section {
@@ -115,6 +121,23 @@ header {
 .publicacoes-section {
     padding: 60px 20px;
     background-color: #f9f9f9; /* Fundo cinza claro */
+}
+
+.publicacoes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento entre os cards */
+}
+
+.publicacao-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margem para espaçamento entre os cards */
+    flex: 1; /* Permitir que os cards ocupem espaço igual */
+    min-width: 250px; /* Largura mínima para os cards */
+    max-width: 30%; /* Largura máxima para os cards */
 }
 
 .eventos-section {
@@ -183,11 +206,19 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .laboratorios-section h3, .potimaker-section h3, .publicacoes-section h3, .eventos-section h3, .contato-section h3 {
     font-size: 2.4em;
     color: #7C39D3;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centralizando o título */
 }
 
 .laboratorios-section p, .potimaker-section p, .publicacoes-section p, .eventos-section p, .contato-section p {
@@ -249,8 +280,6 @@ header {
     color: #7C39D3;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
 }
 
 /* Formulário de Contato */
@@ -363,6 +392,25 @@ footer {
     width: auto;
     padding: 1px;
     border: 1px solid rgb(249, 122, 122);
+}
+.imagem-evento{
+    width: 150px;
+    padding: 150px;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    margin-left: -120px;
+}
+.eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+.eventos-title{
+    margin: 10px;
+    background-color: #e9dbfb;
 }
 .imagem-rodape{
     width: 1px;
