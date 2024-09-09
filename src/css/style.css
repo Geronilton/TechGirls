@@ -9,7 +9,6 @@ body {
 header {
     background-color: #7C39D3; /* Cor de fundo do cabeçalho */
     padding: 15px 0; /* Diminui o padding para tornar o cabeçalho mais compacto */
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000; /* Mantém o header no topo */
@@ -116,7 +115,7 @@ body {
 
 /* Seções com fundo cinza */
 .hero-section {
-    padding: 60px 20px;
+    padding: 6000px 20px;
     background-color: #f9f9f9; /* Fundo cinza claro */
     text-align: center; /* Centralizando o texto */
 }
@@ -129,8 +128,7 @@ body {
 }
 
 .robotica-section {
-    padding: 60px 20px;
-    background-color: #e0e0e0; /* Fundo cinza mais escuro */
+    padding: 10px 20px;
     text-align: center; /* Centraliza o texto dentro da seção */
 }
 
@@ -140,17 +138,29 @@ body {
     align-items: center; /* Alinha o conteúdo verticalmente */
     flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
     gap: 20px; /* Adiciona espaço entre o texto e a imagem */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container na tela */
 }
 
-.robotica-text, .robotica-image {
+.robotica-text {
     flex: 1;
-    min-width: 300px; /* Define uma largura mínima para garantir que o texto e a imagem tenham espaço */
+    min-width: 300px; /* Define uma largura mínima para garantir que o texto tenha espaço */
+    padding: 20px; /* Adiciona um padding para espaçar o texto da borda */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+}
+
+.robotica-image {
+    flex: 1;
+    min-width: 300px; /* Define uma largura mínima para garantir que a imagem tenha espaço */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
 }
 
 .robotica-image img {
     width: 100%; /* Faz a imagem ocupar toda a largura do container */
     height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
 }
+
 
 .title {
     margin-bottom: 20px; /* Espaço abaixo do título */
@@ -160,7 +170,7 @@ body {
 
 .laboratorios-section {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Fundo cinza claro */
+    background-color: #e0e0e0; /* Fundo cinza mais escuro */
 }
 
 .laboratorios-cards {
@@ -214,7 +224,7 @@ body {
 
 .equipe-section {
     padding: 40px 20px;
-    background-color: #f4f4f4; /* Fundo cinza claro */
+    background-color: #e0e0e0; /* Fundo cinza mais escuro */
     text-align: center; /* Centraliza o texto */
 }
 
@@ -255,9 +265,9 @@ body {
 
 .hero-image img, .robotica-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 
 .hero-text, .robotica-text {
@@ -273,8 +283,8 @@ body {
 }
 
 .robotica-text h3 {
-    font-size: 1.8em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 2.8em;
+
 }
 
 .responsaveis-section {
@@ -446,13 +456,14 @@ footer {
 }
 
 .content-publicacoes{
+    margin-top: 20px;
     align-items: center;
     border: 1px solid black;
     border-radius: 8px;
     width: 250px;
     height: 400px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 5px;
+    padding: 20px;
 }
 
 .container-publicacoes{
@@ -486,25 +497,42 @@ footer {
     padding: 1px;
     border: 1px solid rgb(249, 122, 122);
 }
-.imagem-evento{
-    width: 150px;
-    padding: 150px;
-    margin-top: -150px;
-    margin-bottom: -150px;
-    margin-left: -120px;
+
+
+
+
+.imagem-evento {
+    width: 250px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+
+    padding: 10px; /* Adiciona um padding mais razoável */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja tratada como bloco para centralização */
 }
-.eventos{
+
+.eventos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
-    margin: 10px;
+    border-radius:15px;
+    background-color: #f8f9fa; /* Adiciona uma cor de fundo mais clara para o bloco */
+    padding: 10px; /* Adiciona um padding ao redor dos eventos */
+    margin: 10px 0; /* Margem superior e inferior */
 }
-.eventos-title{
-    margin: 10px;
-    background-color: #e9dbfb;
+
+.eventos-title {
+    margin: 0; /* Remove a margem padrão */
+    padding: 10px; /* Adiciona padding para separar o texto da borda */
+
+    font-size: 1rem; /* Define um tamanho de fonte adequado para o título */
+    font-weight: bold; /* Destaca o título com negrito */
 }
+
+
+
+
+
 .imagem-rodape{
     width: 1px;
     padding: 1px;
