@@ -206,3 +206,24 @@ header {
     width: 80%;
     justify-content: space-between;
 }
+.rodape{
+    background-color: #7C39D3;
+    padding: 20px;
+    margin-bottom: auto;
+
+
+}
+.linha-rodape{
+    background-color: white;
+    width: auto;
+    padding: 1px;
+    border: 1px solid rgb(249, 122, 122);
+}
+.imagem-rodape{
+    width: 1px;
+    padding: 1px;
+    border-radius: 100%;
+    /*margin-top: -70px;
+    margin-bottom: -100px;
+    margin-left: -100px;*/
+}
