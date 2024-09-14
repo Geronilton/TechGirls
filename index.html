@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto TechGirls: Iniciação à robótica para meninas, oferecendo aprendizado em programação, eletrônica e mecânica.">
     <title>TechGirls</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -10,11 +11,8 @@
     <header>
         <div class="cabecalho">
             <div class="logo" tabindex="0" role="heading" aria-level="1">
-                <h3>  TechGirls</h3>
-
-                <img class="imgLogo" src="./src//images/Girls__1_-removebg-preview.png" alt="nesta imagem tema uma garota com computador na direita de frente para outra garota tambem com um computador,
-            isso tudo tentro de circulo com cinco penas na parte inferior do circulo.">
-                
+                <img class="imgLogo" src="./src/images/Girls__1_-removebg-preview.png" alt="Garotas com computadores dentro de um círculo com penas.">
+                <h3>TechGirls</h3>
             </div>
             <button class="menu-hamburguer" aria-label="Menu">
                 <div class="barra"></div>
@@ -24,13 +22,13 @@
             <div class="menu">
                 <nav>
                    <ul>
-                    <li><a href="#" tabindex="0">Inicio</a></li>
-                    <li><a href="#" tabindex="0">Equipe</a></li>
-                    <li><a href="#" tabindex="0">Laboratórios</a></li>
-                    <li><a href="#" tabindex="0">PotiMaker</a></li>
-                    <li><a href="#" tabindex="0">Publicações</a></li>
-                    <li><a href="#" tabindex="0">Eventos</a></li>
-                    <li><a href="#" tabindex="0">Contato</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#laboratorios">Laboratórios</a></li>
+                    <li><a href="#potimaker">PotiMaker</a></li>
+                    <li><a href="#publicacao">Publicações</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                    </ul>
                 </nav>
             </div>
@@ -38,17 +36,11 @@
     </header>
 
     <main>
-        <section class="robotica-section" fade-in>
+        <section class="robotica-section fade-in">
             <div class="robotica-content">
                 <div class="robotica-text">
-                    <h3 class="title" style="color: #5E2AA0 ;">Iniciação à Robótica</h3>
-    
-                   <p> O projeto visa incentivar as meninas nas áreas de ciências
-                        exatas, engenharias e computação, trazendo o conhecimento 
-                        técnico e científico as meninas em fase de formação, no 
-                        ensino fundamental 2 e ensino médio. Os responsáveis pelo
-                         projeto são os professores Eberton Marinho, Helber Wagner e Tatiana Sorrentino, 
-                         professores do Curso de Tecnologia em Sistemas para Internet no campus Canguaretama do IFRN.</p>
+                    <h3 class="title" style="color: #5E2AA0;">Iniciação à Robótica</h3>
+                    <p>O projeto visa incentivar as meninas nas áreas de ciências exatas, engenharias e computação...</p>
                 </div>
                 <div class="robotica-image">
                     <img src="src/images/primeira (1).png" alt="Imagem sobre robótica">
@@ -56,13 +48,7 @@
             </div>
         </section>
 
-    
-        
-        </section>
-
-        
-
-        <section class="laboratorios-section fade-in" tabindex="0" aria-labelledby="laboratorios-heading">
+        <section id="laboratorios" class="laboratorios-section fade-in" tabindex="0" aria-labelledby="laboratorios-heading">
             <h3 id="laboratorios-heading" class="title">Laboratórios</h3>
             <div class="laboratorios-cards">
                 <div class="card" tabindex="0">
@@ -80,10 +66,9 @@
             </div>
         </section>
 
-        <section class="potimaker-section fade-in" tabindex="0" aria-labelledby="potimaker-heading">
+        <section id="potimaker" class="potimaker-section fade-in" tabindex="0" aria-labelledby="potimaker-heading">
             <h3 id="potimaker-heading" class="title">PotiMaker</h3>
             <section class="responsaveis-section">
-
          
                 <p>O FabLab PotiMaker permite que pesquisadores e pesquisadoras
                      realizem a conversão de ideias em protótipos, auxiliando no 
@@ -100,11 +85,7 @@
 
     </main>
 
-
-
-
-
-    <section class="equipe-section">
+    <section id="equipe" class="equipe-section">
         <h3 id="responsaveis-heading" class="title" style="color: #5E2AA0;">Equipe</h3>
         
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisl vel lacus ultricies eleifend ac sit amet felis. 
@@ -113,7 +94,7 @@
         </p>
     </section>
 
-    <section class="publicacoes-section">
+    <section id="publicacao" class="publicacoes-section">
         <h3 class="title">Publicações</h3>
         
         <div class="container-publicacoes">
@@ -141,27 +122,29 @@
     </section>
 
     
-    <section class="eventos-section">
+    <section id="eventos" class="eventos-section">
         <div class="eventos-title">
             <h3 class="title">Eventos</h3>
         </div>
-        <div class="eventos">
-            <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
-            <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
-        </div>
-        <div class="eventos">
-            <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
-            <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
-        </div>
-        <div class="eventos">
-            <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
-            <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
+        <div class="container-eventos">
+            <div class="eventos">
+                <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
+                <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
+            </div>
+            <div class="eventos">
+                <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
+                <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
+            </div>
+            <div class="eventos">
+                <img class="imagem-evento" src="src/images/modelagemI.jpg" alt="">
+                <p>O laboratório PotiMaker oferece a primeira edição da Oficina de Modelagem para Impressão 3D.</p>
+            </div>
         </div>
     </section>
 
 
     
-    <section class="contato-section fade-in" tabindex="0" aria-labelledby="contato-heading">
+    <section id="contato" class="contato-section fade-in" tabindex="0" aria-labelledby="contato-heading">
         <h3 id="contato-heading" class="title">Contato</h3>
         <form action="#" method="post" class="contato-form">
             <div>
@@ -218,5 +201,11 @@
             });
         });
     </script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    window.addEventListener('load', function() {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    });
+</script>
 </body>
 </html>

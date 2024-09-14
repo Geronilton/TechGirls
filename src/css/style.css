@@ -1,17 +1,21 @@
-/* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #7C39D3; /* Cor de fundo do cabeçalho */
-    padding: 15px 0; /* Diminui o padding para tornar o cabeçalho mais compacto */
+    background-color: #7C39D3;
+    padding: 15px 0;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Mantém o header no topo */
+    z-index: 1000;
 }
 
 .cabecalho {
@@ -25,7 +29,6 @@ header {
 
 .logo {
     display: flex;
-    font-size: 1.8em;
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
@@ -51,10 +54,8 @@ header {
     height: 3px;
     background-color: #fff;
     margin: 5px 0;
-    transition: transform 0.3s;
 }
 
-/* Estilo do menu */
 .menu nav ul {
     list-style: none;
     display: flex;
@@ -76,14 +77,13 @@ header {
 }
 
 .menu nav ul li a:hover {
-    background-color: #5E2AA0; /* Cor mais escura no hover */
+    background-color: #5E2AA0;
     border-radius: 5px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .menu nav ul {
-        display: none; /* Esconde o menu padrão em telas pequenas */
+        display: none;
         flex-direction: column;
         background-color: #7C39D3;
         position: absolute;
@@ -95,7 +95,7 @@ header {
     }
 
     .menu-hamburguer {
-        display: block; /* Exibe o botão do menu hambúrguer em telas pequenas */
+        display: block;
     }
 
     .menu nav ul li {
@@ -103,80 +103,70 @@ header {
     }
 
     .menu.ativo nav ul {
-        display: flex; /* Mostra o menu quando o hambúrguer é clicado */
+        display: flex;
     }
 }
 
-/* Adiciona um espaçamento no topo da página por conta do cabeçalho fixo */
-body {
-    padding-top: 60px;
-}
-
-
-/* Seções com fundo cinza */
 .hero-section {
     padding: 6000px 20px;
-    background-color: #f9f9f9; /* Fundo cinza claro */
-    text-align: center; /* Centralizando o texto */
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 .hero-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+    flex-direction: column;
 }
 
 .robotica-section {
     padding: 10px 20px;
-    text-align: center; /* Centraliza o texto dentro da seção */
+    text-align: center;
 }
 
 .robotica-content {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
-    gap: 20px; /* Adiciona espaço entre o texto e a imagem */
-    max-width: 1200px; /* Define uma largura máxima para o container */
-    margin: 0 auto; /* Centraliza o container na tela */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .robotica-text {
     flex: 1;
-    min-width: 300px; /* Define uma largura mínima para garantir que o texto tenha espaço */
-    padding: 20px; /* Adiciona um padding para espaçar o texto da borda */
-    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .robotica-image {
     flex: 1;
-    min-width: 300px; /* Define uma largura mínima para garantir que a imagem tenha espaço */
-    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+    min-width: 300px;
+    box-sizing: border-box;
 }
 
 .robotica-image img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-
 
 .title {
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    margin-bottom: 20px;
 }
-
-
 
 .laboratorios-section {
     padding: 60px 20px;
-    background-color: #e0e0e0; /* Fundo cinza mais escuro */
+    background-color: #e0e0e0;
 }
 
 .laboratorios-cards {
     display: flex;
-    justify-content: space-between; /* Espaçamento entre os cards */
-    flex-wrap: wrap; /* Permitir que os cards se movam para a próxima linha se necessário */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -184,31 +174,31 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Margem para espaçamento entre os cards */
-    flex: 1; /* Permitir que os cards ocupem espaço igual */
-    min-width: 250px; /* Largura mínima para os cards */
-    max-width: 30%; /* Largura máxima para os cards */
-    transition: transform 0.3s; /* Efeito de hover suave */
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .potimaker-section {
     padding: 60px 20px;
-    background-color: #e0e0e0; /* Fundo cinza mais escuro */
+    background-color: #e0e0e0;
 }
 
 .publicacoes-section {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Fundo cinza claro */
+    background-color: #f9f9f9;
 }
 
 .publicacoes-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Espaçamento entre os cards */
+    justify-content: space-between;
 }
 
 .publicacao-card {
@@ -216,41 +206,39 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Margem para espaçamento entre os cards */
-    flex: 1; /* Permitir que os cards ocupem espaço igual */
-    min-width: 250px; /* Largura mínima para os cards */
-    max-width: 30%; /* Largura máxima para os cards */
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
 }
 
 .equipe-section {
     padding: 40px 20px;
-
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .equipe-section .title {
-    font-size: 2em; /* Tamanho do título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    color: #333; /* Cor do texto do título */
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .equipe-section p {
-    font-size: 1em; /* Tamanho do texto do parágrafo */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    color: #666; /* Cor do texto do parágrafo */
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
-    max-width: 800px; /* Largura máxima do parágrafo para facilitar a leitura */
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
 
 .eventos-section {
     padding: 60px 20px;
-    background-color: #e0e0e0; /* Fundo cinza mais escuro */
+    background-color: #e0e0e0;
 }
 
 .contato-section {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Fundo cinza claro */
+    background-color: #f9f9f9;
 }
 
 .hero-content, .robotica-content {
@@ -267,7 +255,6 @@ body {
     width: 100%;
     max-width: 600px;
     border-radius: 8px;
-   
 }
 
 .hero-text, .robotica-text {
@@ -284,13 +271,12 @@ body {
 
 .robotica-text h3 {
     font-size: 2.8em;
-
 }
 
 .responsaveis-section {
     padding: 40px 20px;
     max-width: 800px;
-    margin: 20px auto; /* Adicionando margem para espaçamento */
+    margin: 20px auto;
     text-align: center;
     border: 1px solid;
     border-radius: 10px;
@@ -309,19 +295,12 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .laboratorios-section h3, .potimaker-section h3, .publicacoes-section h3, .eventos-section h3, .contato-section h3 {
     font-size: 2.4em;
     color: #7C39D3;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centralizando o título */
+    text-align: center;
 }
 
 .laboratorios-section p, .potimaker-section p, .publicacoes-section p, .eventos-section p, .contato-section p {
@@ -369,181 +348,201 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.contato-section .contato-info {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center;
-}
 
-.contato-section .contato-info h4 {
-    font-size: 1.4em;
-    color: #7C39D3;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Formulário de Contato */
-.contato-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contato-form div {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.contato-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contato-form input, .contato-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.contato-form button {
-    background-color: #7C39D3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contato-form button:hover {
-    background-color: #5a2cb8;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Efeitos de animação */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-.publicacoes-section{
-    background-color: #fff;
-    padding: 40px 20px;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-
-}
-
-.content-publicacoes{
-    margin-top: 20px;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    width: 250px;
-    height: 400px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px;
-}
-
-.container-publicacoes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .hero-content, .robotica-content {
-        flex-direction: column; /* Mudando para coluna para responsividade */
-        align-items: center; /* Centralizando conteúdo */
+    .contato-section .contato-info {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        text-align: center;
     }
 
-    .hero-image, .robotica-image {
-        text-align: center; /* Centralizando imagem */
+    .contato-section .contato-info h4 {
+        font-size: 1.4em;
+        color: #7C39D3;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
 
-    .hero-text {
-        padding-left: 0; /* Removendo padding para centralizar texto */
+    /* Formulário de Contato */
+    .contato-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
-    .hero-text h2 {
-        font-size: 20px;
+    .contato-form div {
+        margin-bottom: 15px;
+        width: 100%;
     }
-}
-.linha-rodape{
-    background-color: white;
-    width: auto;
-    padding: 1px;
-    border: 1px solid rgb(249, 122, 122);
-}
+
+    .contato-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .contato-form input, .contato-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .contato-form button {
+        background-color: #7C39D3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contato-form button:hover {
+        background-color: #5a2cb8;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Efeitos de animação */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .publicacoes-section{
+        background-color: #e0e0e0;
+        padding: 40px 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px ;
+
+    }
+
+    .content-publicacoes{
+        margin-top: 20px;
+        align-items: center;
+        border-radius: 8px;
+        height: 400px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px; 
+        flex: 1; 
+        min-width: 250px;
+        max-width: 18%; 
+        transition: transform 0.3s;
+    }
+
+    .container-publicacoes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content-publicacoes:hover {
+        transform: scale(1.05); 
+    }
 
 
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+        .hero-content, .robotica-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-image, .robotica-image {
+            text-align: center; 
+        }
+
+        .hero-text {
+            padding-left: 0; 
+        }
+
+        .hero-text h2 {
+            font-size: 20px;
+        }
+    }
+    .linha-rodape{
+        background-color: white;
+        width: auto;
+        padding: 1px;
+        border: 1px solid rgb(249, 122, 122);
+    }
 
 
-.imagem-evento {
-    width: 250px; /* Ajuste a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    .imagem-evento {
+        width: 250px; 
+        height: auto; 
 
-    padding: 10px; /* Adiciona um padding mais razoável */
-    margin: 0 auto; /* Centraliza a imagem */
-    display: block; /* Garante que a imagem seja tratada como bloco para centralização */
-}
+        padding: 10px; 
+        margin: 0 auto;
+        display: block; 
+    }
 
-.eventos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius:15px;
-    background-color: #f8f9fa; /* Adiciona uma cor de fundo mais clara para o bloco */
-    padding: 10px; /* Adiciona um padding ao redor dos eventos */
-    margin: 10px 0; /* Margem superior e inferior */
-}
+    .eventos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        border-radius:15px;
+        background-color: #f8f9fa; 
+        padding: 10px; 
+        margin: 10px 0;
+        transition: transform 0.3s;
+    }
 
-.eventos-title {
-    margin: 0; /* Remove a margem padrão */
-    padding: 10px; /* Adiciona padding para separar o texto da borda */
+    .eventos:hover {
+        transform: scale(1.05); 
+    }
 
-    font-size: 1rem; /* Define um tamanho de fonte adequado para o título */
-    font-weight: bold; /* Destaca o título com negrito */
-}
+    .container-eventos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .eventos-title {
+        margin: 0; 
+        padding: 10px; 
+
+        font-size: 1rem; 
+        font-weight: bold; 
+    }
 
 
+    .imagem-rodape{
+        width: 1px;
+        padding: 1px;
+        border-radius: 100%;
+        /*margin-top: -70px;
+        margin-bottom: -100px;
+        margin-left: -100px;*/
+    }
 
+    .imgLogo{
+        width: 130px;
+        height: 130px;
+        margin-left: 1%;
 
-
-.imagem-rodape{
-    width: 1px;
-    padding: 1px;
-    border-radius: 100%;
-    /*margin-top: -70px;
-    margin-bottom: -100px;
-    margin-left: -100px;*/
-}
-
-.imgLogo{
-    width: 110px;
-    height: 110px;
-    margin-left: 1%;
-}
+    }
